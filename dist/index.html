@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="AppController">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <title ng-bind="title">webapp</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="css/index.css">
+<body>
+<p>wwwwww</p>
+
+<script>
+    //动态获取分辨率
+    var fontSize = window.screen.width / 10 + "px";
+    document.getElementsByTagName("html")[0].style.fontSize = fontSize;
+
+</script>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
